@@ -1,0 +1,22 @@
+/* 
+    programador.....:Joel Veiga
+    Data............:28/10/2024
+    Observações.....:Pisca um LED Azul
+*********************************************
+*/
+//Constantes
+const int PINO_LED = 8;
+const int TEMPO_ESPERA_MS = 1000;
+
+//Inicializações
+void setup(void) {
+pinMode(PINO_LED, OUTPUT);
+}
+
+//Programa principal
+void loop(void) {
+digitalWrite(PINO_LED, HIGH);
+delay(TEMPO_ESPERA_MS);
+digitalWrite(PINO_LED, LOW);
+delay(TEMPO_ESPERA_MS);
+}
